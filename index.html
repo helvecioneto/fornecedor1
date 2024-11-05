@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processador de Produtos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        textarea, input[type="submit"] {
+            width: 100%;
+            margin-top: 10px;
+        }
+        textarea {
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Processador de Produtos</h1>
+    <form action="/processar" method="post">
+        <label for="texto">Cole o texto dos produtos abaixo:</label>
+        <textarea name="texto" id="texto" required></textarea>
+        <input type="submit" value="Processar e Baixar CSV">
+    </form>
+</body>
+</html>
